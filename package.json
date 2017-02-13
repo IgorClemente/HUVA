@@ -1,0 +1,20 @@
+{
+  "name": "huva",
+  "version": "1.0.0",
+  "description": "Projeto HUVA",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.3.1"
+  },
+  "devDependencies": {
+    "bootstrap-validator": "^0.11.9",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "jquery-mask-plugin": "^1.14.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Marques",
+  "license": "ISC"
+}

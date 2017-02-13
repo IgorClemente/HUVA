@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title> Inscrição </title>
+    <meta charset="UTF-8">
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="offset-1 col-10 offset-md-2 col-md-8">
+    <form class="formulario" data-toggle="validator" role="form" action="SaveForm.php">
+
+        <h2>54º Encontro de Jovens com Cristo H.U.V.A. - Ficha de Inscrição</h2>
+
+        <hr>
+        </br>
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput" class="form-control-label">Nome</label>
+            <input required type="text" class="form-control form-control-success name" name="nome" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+        
+        </br>
+        <hr>
+        </br>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Endereço</label>
+            <input required type="text" class="form-control form-control-success" id="formGroupExampleInput" name="endereco" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Bairro</label>
+            <input required type="text" class="form-control form-control-success" id="formGroupExampleInput" name="bairro" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Cidade</label>
+            <input required type="text" class="form-control form-control-success" id="formGroupExampleInput" name="cidade" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">CEP</label>
+            <input required type="text" class="form-control form-control-success cep" id="formGroupExampleInput" name="cepp" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+        </br>
+        <hr>
+        </br>
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Telefone Residencial</label>
+            <input required type="text" class="form-control form-control-success phone_with_ddd" id="formGroupExampleInput" name="telefoneR" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Celular</label>
+            <input required type="text" class="form-control form-control-success celular" name="telefoneC" id="formGroupExampleInput" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Operadora</label>
+            <select required class="form-control" id="exampleSelect1" name="operadora" data-error="Selecione uma operadora.">
+                <option></option>
+                <option>Claro</option>
+                <option>Vivo</option>
+                <option>Tim</option>
+                <option>Nextel</option>
+                <option>Oi</option>
+            </select>
+            <span class="form-control-feedback"></span>
+            <small class="help-block with-errors"></small>
+        </div>
+
+        </br>
+        <hr>
+        </br>
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Data de Nascimento</label>
+            <input required class="form-control" type="date" id="example-date-input" name="nascData" data-error="Informe uma data">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="exampleSelect1">Estado Civil</label>
+            <select required class="form-control" id="exampleSelect1" name="estadoCivil" data-error="Selecione um estado civil.">
+               <option></option>
+               <option>Solteiro(a)</option>
+               <option>Casado(a)</option>
+               <option>Divorciado(a)</option>
+               <option>Viúvo(a)</option>
+               <option>Separado(a)</option>
+            </select>
+            <span class="form-control-feedback"></span>
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input required type="email" class="form-control form-control-success" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" data-error="Campo obrigatório.">
+            <small class="help-block with-errors">Informe seu melhor e-mail.</small>
+        </div>
+
+        </br>
+        <hr>
+        </br>
+
+        <fieldset class="form-group">
+
+            <legend>Já fez o Encontro HUVA?</legend>
+
+            <div class="custom-controls-stacked">
+                <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="escolheOp" id="optionsRadios1" value="option1" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Sim</span>
+                </label>
+        
+                <label class="custom-control custom-radio sumisso">
+                    <input type="radio" class="custom-control-input" name="escolheOp" id="optionsRadios1" value="option1">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Não</span>
+                </label>
+            </div>
+        </fieldset>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Qual encontro você participou?</label>
+            <input name="encontroParticipou"  type="text" class="form-control form-control-success" id="formGroupExampleInput" data-error="Informe um encontro que você participou.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Quem te convidou? - Nome e Telefone</label>
+            <input name="encontroConvidado" type="text" class="form-control form-control-success" id="formGroupExampleInput" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+        </br>
+        <hr>
+        </br>
+        
+        <div class="form-group">
+            <label for="formGroupExampleInput">Contato para Recados:</label>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Nome</label>
+            <input name="contatoRecadoNome" required type="text" class="form-control form-control-success" id="formGroupExampleInput" data-error="Campo obrigatório.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+
+        <div class="form-group has-feedback">
+            <label for="formGroupExampleInput">Telefone</label>
+            <input name="contatoRecadoTel" required type="text" class="form-control form-control-success phone_with_ddd" id="formGroupExampleInput" data-error="Informe um telefone para contato.">
+            <small class="help-block with-errors"></small>
+        </div>
+
+        </br>
+        <hr>
+        </br>
+
+        <!-- INICIO DOS RADIOS CHECKS -->
+
+        <fieldset class="form-group">
+
+            <legend>Ficou sabendo do encontro HUVA através de:</legend>
+            </br>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                     Amigos
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Família
+             </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Missa
+             </label>
+            </div>
+
+
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Grupo de Oração
+             </label>
+            </div>
+
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Faixas
+             </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Redes Sociais
+             </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Flyers
+             </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                 <input required type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Outros
+             </label>
+            </div>
+        </fieldset>
+
+        <!--INICIO DOS RADIOS CHECKS -->
+
+        <input class="btn btn-primary" type="submit" value="Enviar inscrição">
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+         </br>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+
+</html>
