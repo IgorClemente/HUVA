@@ -1,0 +1,35 @@
+*
+{
+  font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+	padding-top: 30px;
+	margin-bottom: 20px;
+	font-size: 35px;
+	color: #474E69;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.form-group
+{
+  font-size: 25px;
+}
+
+
+legend
+{
+	font-weight:550;
+	font-size: 30px;
+}
+
+.aparece-tudo
+{
+	display: block;
+}
+
+.some-tudo
+{
+	display: none;
+}
