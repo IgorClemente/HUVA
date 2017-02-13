@@ -27,8 +27,8 @@ if (isset($_POST['envio'])){
     $estadoCivil = $_POST['estadoCivil'];
     $email = $_POST['email'];
     $escolheOp  = $_POST['escolheOp'];
-    $encontroParticipou  = isset($_POST['encontroParticipou'])?escape($_POST['encontroParticipou']): 'Nao';
-    $encontroConvidado  = isset($_POST['encontroConvidado'])?escape($_POST['encontroConvidado']);
+    $encontroParticipou  = isset($_POST['encontroParticipou']);
+    $encontroConvidado  = isset($_POST['encontroConvidado']);
     $contatoRecadoNome  = $_POST['contatoRecadoNome'];
     $contatoRecadoTel  = $_POST['contatoRecadoTel'];
     $optionsRadios = $_POST['optionsRadios'];
