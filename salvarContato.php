@@ -7,7 +7,7 @@ if (isset($_POST['envio'])){
     /*** Configuração de E-mail ***/
 
     $enviaFormularioParaNome = 'Contato GRUPO HUVA';
-    $enviaFormularioParaEmail = 'edukeke@hotmail.com';
+    $enviaFormularioParaEmail = 'igorelectrofest2011@hotmail.com';
     $caixaPostalServidorNome = 'Contato Site';
     $caixaPostalServidorEmail = 'igor.clemente@aerosoftcargas.com.br';
     $caixaPostalServidorSenha = 'igorvibelike';
@@ -27,8 +27,8 @@ if (isset($_POST['envio'])){
     $estadoCivil = $_POST['estadoCivil'];
     $email = $_POST['email'];
     $escolheOp  = $_POST['escolheOp'];
-    $encontroParticipou  = $_POST['encontroParticipou'];
-    $encontroConvidado  = $_POST['encontroConvidado'];
+    $encontroParticipou  = isset($_POST['encontroParticipou'])?escape($_POST['encontroParticipou']): 'Nao';
+    $encontroConvidado  = isset($_POST['encontroConvidado'])?escape($_POST['encontroConvidado']);
     $contatoRecadoNome  = $_POST['contatoRecadoNome'];
     $contatoRecadoTel  = $_POST['contatoRecadoTel'];
     $optionsRadios = $_POST['optionsRadios'];
@@ -96,10 +96,14 @@ if (isset($_POST['envio'])){
     if(!$mail->Send()){
 
         $mensagemRetorno = 'Erro ao enviar formulário: '. print($mail->ErrorInfo);
-}else{
-        $mensagemRetorno = 'Formulário enviado com sucesso!';
 
-        echo "<script>window.location = 'sucesso.html'</script>";
+    }else{
+            $mensagemRetorno = 'Formulário enviado com sucesso!';
+            echo "<script>window.location = 'sucesso.html'</script>";
+
+
+
+
     }
 
 }
